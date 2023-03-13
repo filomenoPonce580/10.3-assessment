@@ -4,6 +4,8 @@ const expect = require("chai").expect;
 
 
 describe("Checking score", () => {
+
+
   it("should return null of the student is not defined", () => {
     const expectNull = null;
     const expectNum = typeof 9
@@ -14,6 +16,10 @@ describe("Checking score", () => {
       { name: "Natalee Vargas", score: 9.2 },
     ];
 
-    expect(findStudentScoreByName(input.absentName)).to.equal(expectNull); //
+    expect(findStudentScoreByName(input, input.incorrectName)).to.equal(expectNull);
   });
+
+  
+
+
 });
