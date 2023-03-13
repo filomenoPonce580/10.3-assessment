@@ -14,6 +14,6 @@ describe("Checking score", () => {
       { name: "Natalee Vargas", score: 9.2 },
     ];
 
-    expect(findStudentScoreByName(input)).to.equal(null); //
+    expect(findStudentScoreByName(input.absentName)).to.equal(expectNull); //
   });
 });
